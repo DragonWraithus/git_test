@@ -1,3 +1,39 @@
+html {
+	display: flex;
+	flex-direction: column;
+	background-color: rgb(20, 11, 33);
+	font-size: 1em;
+	font-family: "Open Sens", sans-serif;
+}
+
+body {
+	width: 60em;
+	margin: 0 auto;
+	background-color: #437;
+	padding: 0 2em 2em 2em;
+	border: .5em solid black;
+}
+
+img {
+	display: flex;
+	flex-direction: row;
+	margin: 1em auto;
+}
+
+h1 {
+	display: flex;
+	flex-direction: row;
+	justify-content:center;
+	margin: 0;
+	padding: 0em auto 0 auto;
+	color: #7d6;
+	font-size: 2em;
+	text-shadow: .3em .3em .1em black;
+}
+
 p {
-	color: red;
+	font-size: 1em;
+	color: rgb(113, 248, 113);
+	line-height: .5em;
+	letter-spacing: .1em;
 }
