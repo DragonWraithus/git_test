@@ -2,8 +2,9 @@
 <html>
 <head>
 	<meta charset="UTF-8">
+	<meta name="description" content="A page built to explore html and css.">
 	<title>User Testing</title>
-	<link href="../styles/index.css" rel="stylesheet" type="text/css">
+	<!--	<link href="../styles/index.css" rel="stylesheet" type="text/css"> -->
 	<link href="../styles/second.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -38,6 +39,7 @@
 		</ul>
 	</ol>
 
+	<h2>Dictionary Lists</h2>
 	<dl>
 		<dt>HTML</dt>
 		<dd>Abbreviated hyper-text markup lang</dd>
@@ -50,32 +52,58 @@
 	<h2>Tables</h2>
 	<table>
 		<tr>
-			<td>Row1, cell 1 </td>
-			<td>Row1, cell 2 </td>
-			<td>Row1, cell 3 </td>
+			<td>Row 1, Cell 1 </td>
+			<td>Row 1, Cell 2 </td>
+			<td>Row 1, Cell 3 </td>
 		</tr>
 		<tr>
-			<td>Row2, cell 1 </td>
-			<td>Row2, cell 2 </td>
-			<td>Row2, cell 3 </td>
+			<td>Row 2, Cell 1 </td>
+			<td>Row 2, Cell 2 </td>
 		</tr>
 		<tr>
-			<td>Row3, cell 1 </td>
-			<td>Row3, cell 2 </td>
-			<td>Row3, cell 3 </td>
+			<td>Row 3, Cell 1 </td>
+			<td>Row 3, Cell 2 </td>
+			<td>Row 3, Cell 3 </td>
 		</tr>
 		<tr>
-			<td>Row4, cell 1 </td>
-			<td>Row4, cell 2 </td>
-			<td>Row4, cell 3 </td>
+			<td>Row 4, Cell 1 </td>
+			<td>Row 4, Cell 2 </td>
+			<td>Row 4, Cell 3 </td>
 		</tr>
 	</table>
+
+	<div class="supplemental">
+		<h3>New Table Elements</h3>
+
+		<table>
+			<tr>
+				<th>First Col</th>
+				<th>Second</th>
+				<th>Third</th>
+			</tr>
+			<tr>
+				<td>(1,1)</td>
+				<td colspan="2">(1,2), space (1,3)</td>
+			</tr>
+			<tr>
+				<td>(2,1)</td>
+				<td rowspan="2">(2,2), (3,2)</td>
+				<td>(3,3)</td>
+			</tr>
+			<tr>
+				<td>(3,1)</td>
+				<td>(3,3)</td>
+			</tr>
+			
+		</table>
+
+	</div>
 
 	<h2>Forms</h2>
 	<form action="contactus.php" method="post">
 		<p>Name:</p>
-		<input type"text" name="name" value="First Name">
-		<input type"text" name="name" value="Last Name">
+		<input type"text" name="name_first" value="First Name">
+		<input type"text" name="name_last" value="Last Name">
 
 		<p>Group</p>
 		<select>
@@ -92,15 +120,98 @@
 		</p>
 
 		<p>Comments</p>
-		<textarea cols="50" rows="4">Let us know what you think.</textarea>
+		<textarea name="commenting" cols="50" rows="4">Let us know what you think.</textarea>
 	
 		<p>Submit form?</p>
 		<button type"submit" value="submisison">Done!</button>
 	</form>
 
-	<a href="#mother">
-		<p>Return</p>
-	</a>
+	<div id="scissors">
+		<p>This is <em class="paper">normal</em>.</p>
+	</div>
+
+	<div class="suppelemental">
+		<h2>Abbreviations</h2>
+
+		<p> This site is about exploring <abbr title="HyperText Markup Language">HTML</abbr> and <abbr title="Cascading Stlye Sheets">CSS</abbr>.</p>
+
+		<h2>Quotes</h2>
+
+		<p>This sub heading is all about quoting people. Bob said: <q>I don't know anything.</q></p>
+		<p>Bob doesn't know anything.</p>
+		<p>However <a href="https://www.htmldog.com/guides/htm/indermediate/text/">this resource</a> says:
+
+		<blockquote cite="https://www.htmldog.com/guides/htm/indermediate/text/">
+			<p>blockquote and q are used for quotations. blockquote is generally used for standalone often multi-line quotations whereas q is used for shorter, in-line quotations.</p>
+		</blockquote>
+
+		<h3>Figures<h3>
+		<figure>
+			<blockquote>[Quote about evolution]</blockquote>
+			<figcaption>~Charles Darwin</figcaption>
+		</figure>
+
+		<h2>Citations</h2>
+
+		<p>According to <cite>the Bible</cite>, <q>the earth is only 5,000 years old</q>.<p>
+
+		<h2>Code</h2>
+
+		<p>If you add the line <code><var>giv_vader_a_chuckle</var> = true;</code> to the <code>destroy_planet</code> subroutine and then type <kbd>ilovejabba</kbd> into the console, the big bad green Death Star laser will etch <samp>Slug Lover!</samp> on th planet's surface.</p>
+
+		<h2>Preformatted Text</h2>
+		<pre><code>
+	&lt;div id="intro"&gt;
+		&lt;h1&gt;Some heading&lt;/h1&gt;
+		&lt;p&gt;Some string of text formatted into a paragraph with gt and lt.&lt/p&gt;
+	&lt;/div&gt;
+		</code></pre>
+
+		<h2>Definitions, Directions, Editorial</h2>
+
+		<p>This <dfn title="A dog of impure breeding">mutt</dfn> is untrained.</p>
+		<p>Hover over <del datetime="2019-12-23">"mutt"</del> <ins cite="#mother">the italicized word.</ins></p>
+
+		<bdo dir="rtl">racecar</bdo>
+
+		<h2>Sectioning</h2>
+
+		<article>
+			<header>
+				<h4>Pursuasive Nonsense&hellip;</h4>
+				<p>I present to you an unapealing argument. It is easy to refute because mostly I will be rambling nonsensically until you wish I had simply used lorem ipsum or some simmilar chuck of words that you would be rather disinclined to read.</p>
+				<p>Without further adieu. Here we go.</p>
+			</header>
+			<section id="main_content">
+				<p>Can anyone even really call this content? What is content except something one person wishes to convey to another. What is a grouping of words without any purpose? If I'm merely typing words for the sake of typing words and filling a page, am I trying to covey anything? Can that be called content?</p>
+				<aside>
+					<p>Content is: something that is to be expressed through some medium, as speech, writing, or any of various arts</p>
+				</aside>
+				<p>As far as I care, the answer is no. Nonsense is nonsense. If it made sense it could be called content, something that contains no meaning cannot.</p>
+			</section>
+
+			<footer>
+				<p>Despite my most mediocre efforts, it appears you are still reading. Good for you, I suppose. However, I ask that you not share this around as I imagine it's rather embarassing you've wasted your time so. Carry on.
+			</footer>
+		</article>
+
+	</div>
+
+	<nav id="site_links">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="#mother">Return</a></li>
+	</nav>
+
+	<div class="creator">
+		<h2>Contact info</h2>
+		<address>
+		<ul>
+			<li>Number Unavailable.</li>
+			<li>nunya@bussiness.com</li>
+			<li>localhost:60000</li>
+		</ul>
+		<address>
+	</div>
 
 </body>
 </html>
